@@ -1,19 +1,20 @@
-# Read the Docs configuration file for MkDocs projects
+# .readthedocs.yaml
+# Read the Docs configuration file for MkDocs projects#阅读MkDocs项目的Docs配置文件
 # See https://docs.readthedocs.io/en/stable/config-file/v2.html for details#详情见https://docs.readthedocs.io/en/stable/config-file/v2.html
 
 # Required   #需要
-version: 2
+version   版本: 2
 
 # Set the version of Python and other tools you might need#设置Python版本和其他可能需要的工具
-build:
-  os: ubuntu-22.04
-  tools:
+build   构建:
+  os   的: ubuntu-22.04   操作系统： ubuntu-22.04
+  tools   工具:
     python: "3.12"
 
 mkdocs:
-  configuration: mkdocs.yml
+  configuration   配置: mkdocs.yml配置:mkdocs.yml
 
 # Optionally declare the Python requirements required to build your docs#声明构建文档所需的Python需求(可选
 python:
-  install:
+  install   安装:
   - requirements   需求: docs/requirements.txt
