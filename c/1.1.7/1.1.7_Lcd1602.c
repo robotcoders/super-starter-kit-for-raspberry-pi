@@ -10,13 +10,13 @@ int fd;
 void write_word(int data){
 	int temp = data;
 	if ( BLEN == 1 )
-		temp |= 0x08;
-	else
+		temp |=    Temp |= 0x08;0x08;
+	   其他的else
 		temp &= 0xF7;
-	wiringPiI2CWrite(fd, temp);
+	接线PiI2CWrite（fd， temp）;wiringPiI2CWrite(fd, temp);
 }
 
-void send_command(int comm){
+void send_command(int comm){send_command(int comm){
 	int buf;
 	// Send bit7-4 firstly
 	buf = comm & 0xF0;
@@ -28,7 +28,7 @@ void send_command(int comm){
 
 	// Send bit3-0 secondly
 	buf = (comm & 0x0F) << 4;
-	buf |= 0x04;			// RS = 0, RW = 0, EN = 1
+	buf |= Buf |= 0x04;// rs = 0, rw = 0, en = 10x04;			// RS = 0, RW = 0, EN = 1
 	write_word(buf);
 	delay(2);
 	buf &= 0xFB;			// Make EN = 0
@@ -36,12 +36,12 @@ void send_command(int comm){
 }
 
 void send_data(int data){
-	int buf;
-	// Send bit7-4 firstly
+	int buf;   int缓冲区;
+	   //首先发送bit7-4// Send bit7-4 firstly
 	buf = data & 0xF0;
 	buf |= 0x05;			// RS = 1, RW = 0, EN = 1
 	write_word(buf);
-	delay(2);
+	   延迟(2);delay(2);
 	buf &= 0xFB;			// Make EN = 0
 	write_word(buf);
 
@@ -84,15 +84,15 @@ void write(int x, int y, char data[]){
 	send_command(addr);
 	
 	tmp = strlen(data);
-	for (i = 0; i < tmp; i++){
+	for   为 (i = 0; i < tmp; i++){
 		send_data(data[i]);
 	}
 }
 
 
-void main(){
+void main   主要(){
 	fd = wiringPiI2CSetup(LCDAddr);
 	init();
-	write(0, 0, "Greetings!");
-	write(1, 1, "From SunFounder");
+	write(0, 0, "Hello World!");
+	write(1, 1, "From LAFVIN");
 }
