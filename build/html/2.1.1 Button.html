@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2.1.1 Button &mdash; Super Starter Kit 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2709fde1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="2.1.2Joystick" href="2.1.2%20Joystick.html" />
+    <link rel="prev" title="2 Input (for Pi 4)" href="2_input.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Super Starter Kit
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="1_output.html">1 Output (for Pi 4)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="2_input.html">2 Input (for Pi 4)</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2.1.1 Button</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#components">Components</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#connect">Connect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#code">Code</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#for-c-language">For  C  Language</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#phenomenon">Phenomenon</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="2.1.2%20Joystick.html">2.1.2Joystick</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.1.3%20Tilt%20Switch.html">2.1.3 Tilt Switch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.1.4%20Potentiometer.html">2.1.4 Potentiometer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.1.5%20Keypad.html">2.1.5 Keypad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.2.1%20Photoresistor.html">2.2.1 Photoresistor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.2.2%20Thermistor.html">2.2.2 Thermistor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.2.3%20DHT-11.html">2.2.3 DHT-11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.2.4%20PIR.html">2.2.4 PIR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.2.5%20Ultrasonic%20Sensor%20Module.html">2.2.5 Ultrasonic Sensor Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.2.6%20GY521%20Module.html">2.2.6 GY521 Module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="3_extension.html">3 Extension (for Pi 4)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Super Starter Kit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="2_input.html">2 Input (for Pi 4)</a></li>
+      <li class="breadcrumb-item active">2.1.1 Button</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/2.1.1 Button.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="button">
+<h1>2.1.1 Button<a class="headerlink" href="#button" title="Link to this heading"></a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h2>
+<p>In this lesson, we will learn how to turn on or off the LED by using a button.</p>
+</section>
+<section id="components">
+<h2>Components<a class="headerlink" href="#components" title="Link to this heading"></a></h2>
+<p><img alt="" src="_images/list_2.1.1_Button.png" /></p>
+<p><strong>Button</strong></p>
+<p>Button is a common component used to control electronic devices. It is usually used as switch to connect or break circuits. Although buttons come in a variety of sizes and shapes, the one used here is a 6mm mini-button as shown in the following pictures.</p>
+<p>Two pins on the left are connected, and the one on the right is similar to the left, which is shown below:</p>
+<p><img alt="" src="_images/image148.png" /></p>
+<p>The symbol shown as below is usually used to represent a button in circuits.</p>
+<p><img alt="" src="_images/image301.png" /></p>
+<p>When the button is pressed, the 4 pins are connected, thus closing the circuit.</p>
+</section>
+<section id="connect">
+<h2>Connect<a class="headerlink" href="#connect" title="Link to this heading"></a></h2>
+<p>Use a normally open button as the input of Raspberry Pi, the connection is shown in the schematic diagram below. When the button is pressed, the GPIO18 will turn into low level (0V). We can detect the state of the GPIO18 through programming. That is, if the GPIO18 turns into low level, it means the button is pressed. You can run the corresponding code when the button is pressed, and then the LED will light up.</p>
+<blockquote>
+<div><p>[!NOTE]</p>
+<p>The longer pin of the LED is the anode and the shorter one is the cathode.</p>
+</div></blockquote>
+<p><img alt="" src="_images/image302.png" /></p>
+<p><img alt="" src="_images/image303.png" /></p>
+<p><img alt="" src="_images/image152.png" /></p>
+</section>
+<section id="code">
+<h2>Code<a class="headerlink" href="#code" title="Link to this heading"></a></h2>
+<section id="for-c-language">
+<h3>For  C  Language<a class="headerlink" href="#for-c-language" title="Link to this heading"></a></h3>
+<p>Go to the code folder compile and run.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">~/</span><span class="nb">super</span><span class="o">-</span><span class="n">starter</span><span class="o">-</span><span class="n">kit</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="n">raspberry</span><span class="o">-</span><span class="n">pi</span><span class="o">/</span><span class="n">c</span><span class="o">/</span><span class="mf">2.1.1</span><span class="o">/</span>
+<span class="n">gcc</span> <span class="mf">2.1.1</span><span class="n">_Button</span><span class="o">.</span><span class="n">c</span> <span class="o">-</span><span class="n">lwiringPi</span>
+<span class="n">sudo</span> <span class="o">./</span><span class="n">a</span><span class="o">.</span><span class="n">out</span>
+</pre></div>
+</div>
+<p>After the code runs, press the button, the LED lights up; otherwise, turns off.</p>
+<p>This is the complete code</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#include &lt;wiringPi.h&gt;</span>
+<span class="c1">#include &lt;stdio.h&gt;</span>
+
+<span class="c1">#define LedPin      0</span>
+<span class="c1">#define ButtonPin   1</span>
+
+<span class="nb">int</span> <span class="n">main</span><span class="p">(</span><span class="n">void</span><span class="p">){</span>
+    <span class="o">//</span> <span class="n">When</span> <span class="n">initialize</span> <span class="n">wiring</span> <span class="n">failed</span><span class="p">,</span> <span class="nb">print</span> <span class="n">message</span> <span class="n">to</span> <span class="n">screen</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">wiringPiSetup</span><span class="p">()</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">){</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s2">&quot;setup wiringPi failed !&quot;</span><span class="p">);</span>
+        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="n">pinMode</span><span class="p">(</span><span class="n">LedPin</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+    <span class="n">pinMode</span><span class="p">(</span><span class="n">ButtonPin</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">LedPin</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
+
+    <span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
+        <span class="o">//</span> <span class="n">Indicate</span> <span class="n">that</span> <span class="n">button</span> <span class="n">has</span> <span class="n">pressed</span> <span class="n">down</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">digitalRead</span><span class="p">(</span><span class="n">ButtonPin</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
+            <span class="o">//</span> <span class="n">Led</span> <span class="n">on</span>
+            <span class="n">digitalWrite</span><span class="p">(</span><span class="n">LedPin</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
+        <span class="o">//</span>  <span class="n">printf</span><span class="p">(</span><span class="s2">&quot;...LED on</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">else</span><span class="p">{</span>
+            <span class="o">//</span> <span class="n">Led</span> <span class="n">off</span>
+            <span class="n">digitalWrite</span><span class="p">(</span><span class="n">LedPin</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
+        <span class="o">//</span>  <span class="n">printf</span><span class="p">(</span><span class="s2">&quot;LED off...</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="phenomenon">
+<h2>Phenomenon<a class="headerlink" href="#phenomenon" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="2_input.html" class="btn btn-neutral float-left" title="2 Input (for Pi 4)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="2.1.2%20Joystick.html" class="btn btn-neutral float-right" title="2.1.2Joystick" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Bot.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

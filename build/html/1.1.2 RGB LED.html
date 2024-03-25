@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1.1.2 RGB LED &mdash; Super Starter Kit 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2709fde1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="1.1.3 LED Dot Matrix" href="1.1.3%20LED%20Dot%20Matrix.html" />
+    <link rel="prev" title="1.1.1 Blinking LED" href="1.1.1_Blinking_LED.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Super Starter Kit
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="1_output.html">1 Output (for Pi 4)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="1.1.1_Blinking_LED.html">1.1.1 Blinking LED</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1.1.2 RGB LED</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#components">Components</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#connect">Connect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#code">Code</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#for-c-language">For C Language</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id1"></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#phenomenon">Phenomenon</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="1.1.3%20LED%20Dot%20Matrix.html">1.1.3 LED Dot Matrix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1.1.6%20I2C%20LCD1602.html">1.1.6 I2C LCD1602</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1.2.1%20Active%20Buzzer.html">1.2.1 Active Buzzer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1.2.2%20Passive%20Buzzer.html">1.2.2 Passive Buzzer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1.3.1%20Motor.html">1.3.1 Motor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1.3.2%20Servo.html">1.3.2 Servo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1.3.3%20Stepper%20Motor.html">1.3.3 Stepper Motor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1.3.4%20Relay.html">1.3.4 Relay</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="2_input.html">2 Input (for Pi 4)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_extension.html">3 Extension (for Pi 4)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Super Starter Kit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="1_output.html">1 Output (for Pi 4)</a></li>
+      <li class="breadcrumb-item active">1.1.2 RGB LED</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/1.1.2 RGB LED.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="rgb-led">
+<h1>1.1.2 RGB LED<a class="headerlink" href="#rgb-led" title="Link to this heading"></a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h2>
+<p>In this lesson, we will use it to control an RGB LED to flash various kinds of colors.</p>
+</section>
+<section id="components">
+<h2>Components<a class="headerlink" href="#components" title="Link to this heading"></a></h2>
+<p><img alt="" src="_images/list_rgb_led.png" /></p>
+<blockquote>
+<div><p>[!NOTE]</p>
+<p><strong>PWM</strong>
+Pulse Width Modulation, or PWM, is a technique for getting analog results with digital means. Digital control is used to create a square wave, a signal switched between on and off. This on-off pattern can simulate voltages in between full on (5 Volts) and off (0 Volts) by changing the portion of the time the signal spends on versus the time that the signal spends off. The duration of “on time” is called pulse width. To get varying analog values, you change, or modulate, that width. If you repeat this on-off pattern fast enough with some device, an LED for example, the result would be like this: the signal is a steady voltage between 0 and 5v controlling the brightness of the LED.</p>
+<p><strong>Duty Cycle</strong>
+A duty cycle is the percentage of one period in which a signal is active. A period is the time it takes for a signal to complete an on-and-off cycle. As a formula, a duty cycle may be expressed as:</p>
+<p><img alt="" src="_images/image56.png" /></p>
+<p>Where <strong>D</strong> is the duty cycle, <strong>T</strong> is the time the signal is active, and <strong>P</strong> is the total period of the signal. Thus, a 60% duty cycle means the signal is on 60% of the time but off 40% of the time. The “on time” for a 60% duty cycle could be a fraction of a second, a day, or even a week, depending on the length of the period.</p>
+<p><img alt="" src="_images/image57.jpeg" /></p>
+</div></blockquote>
+<p><strong>RGB LED</strong></p>
+<p><img alt="img58" src="_images/image58.png" /><img alt="img59" src="_images/image59.png" /></p>
+<p>The three primary colors of the RGB LED can be mixed into various colors by brightness. The brightness of LED can be adjusted with PWM. Raspberry Pi has only one channel for hardware PWM output, but it needs three channels to control the RGB LED, which means it is difficult to control the RGB LED with the hardware PWM of Raspberry Pi. Fortunately, the softPwm library simulates PWM (softPwm) by programming. You only need to include the header file softPwm.h (for C language users), and then call the API it provides to easily control the RGB LED by multi-channel PWM output, so as to display all kinds of color.</p>
+</section>
+<section id="connect">
+<h2>Connect<a class="headerlink" href="#connect" title="Link to this heading"></a></h2>
+<p>After connecting the pins of R, G, and B to a current limiting resistor, connect them to the GPIO17, GPIO18, and GPIO27 respectively. The longest pin (GND) of the LED connects to the GND of the Raspberry Pi. When the three pins are given different PWM values, the RGB LED will display different colors.</p>
+<p><img alt="" src="_images/rgb_led_schematic.png" /></p>
+<p><img alt="" src="_images/image61.png" /></p>
+</section>
+<section id="code">
+<h2>Code<a class="headerlink" href="#code" title="Link to this heading"></a></h2>
+<section id="for-c-language">
+<h3>For C Language<a class="headerlink" href="#for-c-language" title="Link to this heading"></a></h3>
+<p>Go to the folder of the code.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">~/</span><span class="nb">super</span><span class="o">-</span><span class="n">starter</span><span class="o">-</span><span class="n">kit</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="n">raspberry</span><span class="o">-</span><span class="n">pi</span><span class="o">/</span><span class="n">c</span><span class="o">/</span><span class="mf">1.1.2</span><span class="o">/</span>
+</pre></div>
+</div>
+<p>Compile the code.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">gcc</span> <span class="mf">1.1.2</span><span class="n">_rgbLed</span><span class="o">.</span><span class="n">c</span> <span class="o">-</span><span class="n">lwiringPi</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>[!NOTE]</p>
+<p>When the instruction “gcc” is executed, if “-o” is not called, then the executable file is named “a.out”.</p>
+</div></blockquote>
+<p>Run the executable file.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="o">./</span><span class="n">a</span><span class="o">.</span><span class="n">out</span>
+</pre></div>
+</div>
+<p>After the code runs, you will see that RGB displays red, green, blue, yellow, pink, and cyan.</p>
+<p>This is the complete code</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;wiringPi.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;softPwm.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+<span class="cp">#define uchar unsigned char</span>
+<span class="cp">#define LedPinRed    0</span>
+<span class="cp">#define LedPinGreen  1</span>
+<span class="cp">#define LedPinBlue   2</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">ledInit</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
+<span class="w">    </span><span class="n">softPwmCreate</span><span class="p">(</span><span class="n">LedPinRed</span><span class="p">,</span><span class="w">  </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">);</span>
+<span class="w">    </span><span class="n">softPwmCreate</span><span class="p">(</span><span class="n">LedPinGreen</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">);</span>
+<span class="w">    </span><span class="n">softPwmCreate</span><span class="p">(</span><span class="n">LedPinBlue</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">ledColorSet</span><span class="p">(</span><span class="n">uchar</span><span class="w"> </span><span class="n">r_val</span><span class="p">,</span><span class="w"> </span><span class="n">uchar</span><span class="w"> </span><span class="n">g_val</span><span class="p">,</span><span class="w"> </span><span class="n">uchar</span><span class="w"> </span><span class="n">b_val</span><span class="p">){</span>
+<span class="w">    </span><span class="n">softPwmWrite</span><span class="p">(</span><span class="n">LedPinRed</span><span class="p">,</span><span class="w">   </span><span class="n">r_val</span><span class="p">);</span>
+<span class="w">    </span><span class="n">softPwmWrite</span><span class="p">(</span><span class="n">LedPinGreen</span><span class="p">,</span><span class="w"> </span><span class="n">g_val</span><span class="p">);</span>
+<span class="w">    </span><span class="n">softPwmWrite</span><span class="p">(</span><span class="n">LedPinBlue</span><span class="p">,</span><span class="w">  </span><span class="n">b_val</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
+
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">wiringPiSetup</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">-1</span><span class="p">){</span><span class="w"> </span><span class="c1">//when initialize wiring failed, printf messageto screen</span>
+<span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;setup wiringPi failed !&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="n">ledInit</span><span class="p">();</span>
+<span class="w">    </span><span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
+<span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Red</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">ledColorSet</span><span class="p">(</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">);</span><span class="w">   </span><span class="c1">//red</span>
+<span class="w">        </span><span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+<span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Green</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">ledColorSet</span><span class="p">(</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0x00</span><span class="p">);</span><span class="w">   </span><span class="c1">//green</span>
+<span class="w">        </span><span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+<span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Blue</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">ledColorSet</span><span class="p">(</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0xff</span><span class="p">);</span><span class="w">   </span><span class="c1">//blue</span>
+<span class="w">        </span><span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+<span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Yellow</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">ledColorSet</span><span class="p">(</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0x00</span><span class="p">);</span><span class="w">   </span><span class="c1">//yellow</span>
+<span class="w">        </span><span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+<span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Purple</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">ledColorSet</span><span class="p">(</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0xff</span><span class="p">);</span><span class="w">   </span><span class="c1">//purple</span>
+<span class="w">        </span><span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+<span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Cyan</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">ledColorSet</span><span class="p">(</span><span class="mh">0xc0</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0x3e</span><span class="p">);</span><span class="w">   </span><span class="c1">//cyan</span>
+<span class="w">        </span><span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="id1">
+<h3><a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
+</section>
+</section>
+<section id="phenomenon">
+<h2>Phenomenon<a class="headerlink" href="#phenomenon" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="1.1.1_Blinking_LED.html" class="btn btn-neutral float-left" title="1.1.1 Blinking LED" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="1.1.3%20LED%20Dot%20Matrix.html" class="btn btn-neutral float-right" title="1.1.3 LED Dot Matrix" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Bot.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

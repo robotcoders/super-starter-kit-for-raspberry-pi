@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2.1.5 Keypad &mdash; Super Starter Kit 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2709fde1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="2.2.1 Photoresistor" href="2.2.1%20Photoresistor.html" />
+    <link rel="prev" title="2.1.4 Potentiometer" href="2.1.4%20Potentiometer.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Super Starter Kit
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="1_output.html">1 Output (for Pi 4)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="2_input.html">2 Input (for Pi 4)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="2.1.1%20Button.html">2.1.1 Button</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.1.2%20Joystick.html">2.1.2Joystick</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.1.3%20Tilt%20Switch.html">2.1.3 Tilt Switch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.1.4%20Potentiometer.html">2.1.4 Potentiometer</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2.1.5 Keypad</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#components">Components</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#connect">Connect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#code">Code</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#for-c-language">For  C  Language</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#phenomenon">Phenomenon</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="2.2.1%20Photoresistor.html">2.2.1 Photoresistor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.2.2%20Thermistor.html">2.2.2 Thermistor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.2.3%20DHT-11.html">2.2.3 DHT-11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.2.4%20PIR.html">2.2.4 PIR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.2.5%20Ultrasonic%20Sensor%20Module.html">2.2.5 Ultrasonic Sensor Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.2.6%20GY521%20Module.html">2.2.6 GY521 Module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="3_extension.html">3 Extension (for Pi 4)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Super Starter Kit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="2_input.html">2 Input (for Pi 4)</a></li>
+      <li class="breadcrumb-item active">2.1.5 Keypad</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/2.1.5 Keypad.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="keypad">
+<h1>2.1.5 Keypad<a class="headerlink" href="#keypad" title="Link to this heading"></a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h2>
+<p>A keypad is a rectangular array of buttons. In this project, We will use it input characters.</p>
+</section>
+<section id="components">
+<h2>Components<a class="headerlink" href="#components" title="Link to this heading"></a></h2>
+<p><img alt="" src="_images/list_2.1.5_keypad.png" /></p>
+<p><strong>Keypad</strong></p>
+<p>A keypad is a rectangular array of 12 or 16 OFF-(ON) buttons. Their contacts are accessed via a header suitable for connection with a ribbon cable or insertion into a printed circuit board. In some keypads, each button connects with a separate contact in the header, while all the buttons share a common ground.</p>
+<p><img alt="" src="_images/image314.png" /></p>
+<p>More often, the buttons are matrix encoded, meaning that each of them bridges a unique pair of conductors in a matrix. This configuration is suitable for polling by a microcontroller, which can be programmed to send an output pulse to each of the four horizontal wires in turn. During each pulse, it checks the remaining four vertical wires in sequence, to determine which one, if any, is carrying a signal. Pullup or pulldown resistors should be added to the input wires to prevent the inputs of the microcontroller from behaving unpredictably when no signal is present.</p>
+</section>
+<section id="connect">
+<h2>Connect<a class="headerlink" href="#connect" title="Link to this heading"></a></h2>
+<p><img alt="" src="_images/image316.png" /></p>
+<p><img alt="" src="_images/image186.png" /></p>
+</section>
+<section id="code">
+<h2>Code<a class="headerlink" href="#code" title="Link to this heading"></a></h2>
+<section id="for-c-language">
+<h3>For  C  Language<a class="headerlink" href="#for-c-language" title="Link to this heading"></a></h3>
+<p>Go to the code folder compile and run.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">~/</span><span class="nb">super</span><span class="o">-</span><span class="n">starter</span><span class="o">-</span><span class="n">kit</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="n">raspberry</span><span class="o">-</span><span class="n">pi</span><span class="o">/</span><span class="n">c</span><span class="o">/</span><span class="mf">2.1.5</span><span class="o">/</span>
+<span class="n">gcc</span> <span class="mf">2.1.5</span><span class="n">_Keypad</span><span class="o">.</span><span class="n">cpp</span> <span class="o">-</span><span class="n">lwiringPi</span>
+<span class="n">sudo</span> <span class="o">./</span><span class="n">a</span><span class="o">.</span><span class="n">out</span>
+</pre></div>
+</div>
+<p>After the code runs, the values of pressed buttons on keypad (button Value) will be printed on the screen.</p>
+<p>This is the complete code</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>#include &lt;wiringPi.h&gt;
+#include &lt;stdio.h&gt;
+
+#define ROWS  4
+#define COLS  4
+#define BUTTON_NUM (ROWS * COLS)
+
+unsigned char KEYS[BUTTON_NUM] {
+&#39;1&#39;,&#39;2&#39;,&#39;3&#39;,&#39;A&#39;,
+&#39;4&#39;,&#39;5&#39;,&#39;6&#39;,&#39;B&#39;,
+&#39;7&#39;,&#39;8&#39;,&#39;9&#39;,&#39;C&#39;,
+&#39;*&#39;,&#39;0&#39;,&#39;#&#39;,&#39;D&#39;};
+
+unsigned char rowPins[ROWS] = {1, 4, 5, 6};
+unsigned char colPins[COLS] = {12, 3, 2, 0};
+
+void keyRead(unsigned char* result);
+bool keyCompare(unsigned char* a, unsigned char* b);
+void keyCopy(unsigned char* a, unsigned char* b);
+void keyPrint(unsigned char* a);
+void keyClear(unsigned char* a);
+int keyIndexOf(const char value);
+
+void init(void) {
+    for(int i=0 ; i&lt;4 ; i++) {
+        pinMode(rowPins[i], OUTPUT);
+        pinMode(colPins[i], INPUT);
+    }
+}
+
+int main(void){
+    unsigned char pressed_keys[BUTTON_NUM];
+    unsigned char last_key_pressed[BUTTON_NUM];
+
+    if(wiringPiSetup() == -1){ //when initialize wiring failed,print message to screen
+        printf(&quot;setup wiringPi failed !&quot;);
+        return 1;
+    }
+    init();
+    while(1){
+        keyRead(pressed_keys);
+        bool comp = keyCompare(pressed_keys, last_key_pressed);
+        if (!comp){
+            keyPrint(pressed_keys);
+            keyCopy(last_key_pressed, pressed_keys);
+        }
+        delay(100);
+    }
+    return 0;
+}
+
+void keyRead(unsigned char* result){
+    int index;
+    int count = 0;
+    keyClear(result);
+    for(int i=0 ; i&lt;ROWS ; i++ ){
+        digitalWrite(rowPins[i], HIGH);
+        for(int j =0 ; j &lt; COLS ; j++){
+            index = i * ROWS + j;
+            if(digitalRead(colPins[j]) == 1){
+                result[count]=KEYS[index];
+                count += 1;
+            }
+        }
+        delay(1);
+        digitalWrite(rowPins[i], LOW);
+    }
+}
+
+bool keyCompare(unsigned char* a, unsigned char* b){
+    for (int i=0; i&lt;BUTTON_NUM; i++){
+        if (a[i] != b[i]){
+            return false;
+        }
+    }
+    return true;
+}
+
+void keyCopy(unsigned char* a, unsigned char* b){
+    for (int i=0; i&lt;BUTTON_NUM; i++){
+        a[i] = b[i];
+    }
+}
+
+void keyPrint(unsigned char* a){
+    if (a[0] != 0){
+        printf(&quot;%c&quot;,a[0]);
+    }
+    for (int i=1; i&lt;BUTTON_NUM; i++){
+        if (a[i] != 0){
+            printf(&quot;, %c&quot;,a[i]);
+        }
+    }
+    printf(&quot;\n&quot;);
+}
+
+void keyClear(unsigned char* a){
+    for (int i=0; i&lt;BUTTON_NUM; i++){
+        a[i] = 0;
+    }
+}
+
+int keyIndexOf(const char value){
+    for (int i=0; i&lt;BUTTON_NUM; i++){
+        if ((const char)KEYS[i] == value){
+            return i;
+        }
+    }
+    return -1;
+}
+</pre></div>
+</div>
+</section>
+</section>
+<section id="phenomenon">
+<h2>Phenomenon<a class="headerlink" href="#phenomenon" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="2.1.4%20Potentiometer.html" class="btn btn-neutral float-left" title="2.1.4 Potentiometer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="2.2.1%20Photoresistor.html" class="btn btn-neutral float-right" title="2.2.1 Photoresistor" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Bot.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

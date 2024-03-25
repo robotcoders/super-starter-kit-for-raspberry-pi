@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2.2.5 Ultrasonic Sensor Module &mdash; Super Starter Kit 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2709fde1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="2.2.6 GY521 Module" href="2.2.6%20GY521%20Module.html" />
+    <link rel="prev" title="2.2.4 PIR" href="2.2.4%20PIR.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Super Starter Kit
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="1_output.html">1 Output (for Pi 4)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="2_input.html">2 Input (for Pi 4)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="2.1.1%20Button.html">2.1.1 Button</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.1.2%20Joystick.html">2.1.2Joystick</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.1.3%20Tilt%20Switch.html">2.1.3 Tilt Switch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.1.4%20Potentiometer.html">2.1.4 Potentiometer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.1.5%20Keypad.html">2.1.5 Keypad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.2.1%20Photoresistor.html">2.2.1 Photoresistor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.2.2%20Thermistor.html">2.2.2 Thermistor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.2.3%20DHT-11.html">2.2.3 DHT-11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.2.4%20PIR.html">2.2.4 PIR</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2.2.5 Ultrasonic Sensor Module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#components">Components</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#connect">Connect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#code">Code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#phenomenon">Phenomenon</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="2.2.6%20GY521%20Module.html">2.2.6 GY521 Module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="3_extension.html">3 Extension (for Pi 4)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Super Starter Kit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="2_input.html">2 Input (for Pi 4)</a></li>
+      <li class="breadcrumb-item active">2.2.5 Ultrasonic Sensor Module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/2.2.5 Ultrasonic Sensor Module.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ultrasonic-sensor-module">
+<h1>2.2.5 Ultrasonic Sensor Module<a class="headerlink" href="#ultrasonic-sensor-module" title="Link to this heading"></a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h2>
+<p>The ultrasonic sensor uses ultrasonic to accurately detect objects and measure distances. It sends out ultrasonic waves and converts them into electronic signals.</p>
+</section>
+<section id="components">
+<h2>Components<a class="headerlink" href="#components" title="Link to this heading"></a></h2>
+<p><img alt="" src="_images/list_2.2.5.png" /></p>
+<p><strong>Ultrasonic</strong></p>
+<p>Ultrasonic ranging module provides 2cm - 400cm non-contact measurement function, and the ranging accuracy can reach to 3mm. It can ensure that the signal is stable within 5m, and the signal is gradually weakened after 5m, till the 7m position disappears.</p>
+<p>The module includes ultrasonic transmitters, receiver and control circuit. The basic principles are as follows:</p>
+<p>(1)Use an IO flip-flop to process a high level signal of at least 10us.</p>
+<p>(2)The module automatically sends eight 40khz and detects if there is a pulse signal return.</p>
+<p>(3)If the signal returns, passing the high level, the high output IO duration is the time from the transmission of the ultrasonic wave to the return of it. Here, test distance = (high time x sound speed (340 m / s) / 2.</p>
+<p><img alt="" src="_images/image217.png" /></p>
+<p><img alt="" src="_images/image328.png" /></p>
+<p>The timing diagram is shown below. You only need to supply a short 10us pulse for the trigger input to start the ranging, and then the module will send out an 8 cycle burst of ultrasound at 40 kHz and raise its echo. You can calculate the range through the time interval between sending trigger signal and receiving echo signal.</p>
+<p>Formula: us / 58 = centimeters or us / 148 =inch; or: the range = high level time * velocity (340M/S) / 2; you are suggested to use measurement cycle over 60ms in order to prevent signal collisions of trigger signal and the echo signal.</p>
+<p><img alt="" src="_images/image218.png" /></p>
+</section>
+<section id="connect">
+<h2>Connect<a class="headerlink" href="#connect" title="Link to this heading"></a></h2>
+<p><img alt="" src="_images/image329.png" /></p>
+<p><img alt="" src="_images/image220.png" /></p>
+</section>
+<section id="code">
+<h2>Code<a class="headerlink" href="#code" title="Link to this heading"></a></h2>
+<p>For  C  Language</p>
+<p>Go to the code folder compile and run.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">~/</span><span class="n">davinci</span><span class="o">-</span><span class="n">kit</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="n">raspberry</span><span class="o">-</span><span class="n">pi</span><span class="o">/</span><span class="n">c</span><span class="o">/</span><span class="mf">2.2.5</span><span class="o">/</span>
+<span class="n">gcc</span> <span class="mf">2.2.5</span><span class="n">_Ultrasonic</span><span class="o">.</span><span class="n">c</span> <span class="o">-</span><span class="n">lwiringPi</span>
+<span class="n">sudo</span> <span class="o">./</span><span class="n">a</span><span class="o">.</span><span class="n">out</span>
+</pre></div>
+</div>
+<p>With the code run, the ultrasonic sensor module detects the distance between the obstacle ahead and the module itself, then the distance value will be printed on the screen.</p>
+<p>This is the complete code</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>#include &lt;wiringPi.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;sys/time.h&gt;
+
+#define Trig    4
+#define Echo    5
+
+void ultraInit(void)
+{
+    pinMode(Echo, INPUT);
+    pinMode(Trig, OUTPUT);
+}
+
+float disMeasure(void)
+{
+    struct timeval tv1;
+    struct timeval tv2;
+    long time1, time2;
+float dis;
+
+    digitalWrite(Trig, LOW);
+    delayMicroseconds(2);
+
+    digitalWrite(Trig, HIGH);
+    delayMicroseconds(10);
+    digitalWrite(Trig, LOW);
+
+    while(!(digitalRead(Echo) == 1));
+    gettimeofday(&amp;tv1, NULL);
+
+    while(!(digitalRead(Echo) == 0));
+    gettimeofday(&amp;tv2, NULL);
+
+    time1 = tv1.tv_sec * 1000000 + tv1.tv_usec;
+    time2  = tv2.tv_sec * 1000000 + tv2.tv_usec;
+
+    dis = (float)(time2 - time1) / 1000000 * 34000 / 2;
+
+    return dis;
+}
+
+int main(void)
+{
+    float dis;
+    if(wiringPiSetup() == -1){ //when initialize wiring failed,print message to screen
+        printf(&quot;setup wiringPi failed !&quot;);
+        return 1;
+    }
+
+    ultraInit();
+
+    while(1){
+        dis = disMeasure();
+        printf(&quot;%0.2f cm\n\n&quot;,dis);
+        delay(300);
+    }
+
+    return 0;
+}
+</pre></div>
+</div>
+</section>
+<section id="phenomenon">
+<h2>Phenomenon<a class="headerlink" href="#phenomenon" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="2.2.4%20PIR.html" class="btn btn-neutral float-left" title="2.2.4 PIR" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="2.2.6%20GY521%20Module.html" class="btn btn-neutral float-right" title="2.2.6 GY521 Module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Bot.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
