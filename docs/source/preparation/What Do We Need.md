@@ -14,7 +14,7 @@ To connect to a power socket, the Raspberry Pi has a micro USB port (the same fo
 
 Your Raspberry Pi needs an Micro SD card to store all its files and the Raspberry Pi OS. You will need a micro SD card with a capacity of at least 8 GB
 
-## Optional Components[¶](https://docs.sunfounder.com/projects/davinci-kit/en/latest/preparation/what_do_we_need.html#optional-components)
+## Optional Components
 
 **Screen**
 
