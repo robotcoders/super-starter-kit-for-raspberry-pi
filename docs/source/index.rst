@@ -11,6 +11,7 @@ LAFVIN Super Starter Kit for Raspberry Pi
    2_input
    3_extension
    appendix/appendix
+   scratch/scratch
 
 
 Indices and tables
