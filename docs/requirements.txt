@@ -1,5 +1,5 @@
 ﻿# Defining the exact version will make sure things don't break
-sphinx
+sphinx==7.2.5
 sphinx_rtd_theme
 sphinx_conestack_theme
 readthedocs-sphinx-search
