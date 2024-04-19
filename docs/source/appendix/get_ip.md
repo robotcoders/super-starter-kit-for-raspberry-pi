@@ -43,7 +43,17 @@ The default hostname of the Raspberry Pi OS is raspberrypi, and you need to find
 
 
 
-
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
 
 
 
