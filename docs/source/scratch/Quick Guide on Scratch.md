@@ -2,7 +2,7 @@
 
 ## Install Scratch 3
 
-When installing Raspberry Pi OS ([Installing the OS (Common)](../preparation/Installing_the_OS(common).md)), you have to choose the version with desktop, either with desktop only or with desktop and recommended software.
+When installing Raspberry Pi OS ([Installing the OS (Common)](../preparation/Installing_the_OS(Common).md)), you have to choose the version with desktop, either with desktop only or with desktop and recommended software.
 
 If you install the version with the recommended software, you can see Scratch 3 in the system menu at **Programming**.
 
