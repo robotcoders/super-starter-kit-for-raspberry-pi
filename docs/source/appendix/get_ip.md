@@ -13,3 +13,5 @@ The default hostname of the Raspberry Pi OS is raspberrypi, and you need to find
 You can also use network scanning to look up the IP address of Raspberry Pi. You can apply the software, **Advanced IP scanner** and so on.
 
 Scan the IP range set, and the name of all connected devices will be displayed. Similarly, the default hostname of the Raspberry Pi OS is raspberrypi, if you haven’t modified it.
+
+相关设置你可以去准备中的[Set up Your Raspberry Pi](../preparation/Download the Code.md)
