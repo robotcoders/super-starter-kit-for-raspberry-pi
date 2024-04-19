@@ -43,22 +43,37 @@ The default hostname of the Raspberry Pi OS is raspberrypi, and you need to find
 
 
 
+xxcx
 x
 x
 x
 x
+xcxvxcv
 x
-x
-x
-x
+xxcv
 x
 x
 x
 
 
+xcvxcv
+
+xcvcv
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+xcvxcv
 <a id="b"></a>
 **Network Segment Scanning**
 
