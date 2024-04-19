@@ -163,7 +163,10 @@ xcvcv
 
 
 xcvxcv
+
+
 <a id="b"></a>
+
 **Network Segment Scanning**
 
 You can also use network scanning to look up the IP address of Raspberry Pi. You can apply the software, **Advanced IP scanner** and so on.
