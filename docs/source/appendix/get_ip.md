@@ -12,6 +12,12 @@ The default hostname of the Raspberry Pi OS is raspberrypi, and you need to find
 
 
 
+sadas
+
+
+
+
+;pkl
 
 
 
@@ -32,6 +38,7 @@ The default hostname of the Raspberry Pi OS is raspberrypi, and you need to find
 
 
 
+sad
 
 
 
@@ -39,6 +46,19 @@ The default hostname of the Raspberry Pi OS is raspberrypi, and you need to find
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+kjlkjljh
 
 
 
