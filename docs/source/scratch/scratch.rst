@@ -19,4 +19,4 @@ Scratch is a graphical programming tool developed by the Massachusetts Institute
 .. toctree::    
     :maxdepth: 1
 
-    1.1 Wand.md
+    1.1_Lightning.md
