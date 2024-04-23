@@ -22,7 +22,5 @@ git clone https://github.com/lafvintech/super-starter-kit-for-raspberry-pi.git
 
 
 
-相关设置你可以去准备中的[Set up Your Raspberry Pi](../appendix/get_ip.md#b)
-相关设置你可以去准备中的[Set up Your Raspberry Pi](../1.1.2 RGB LED.md)
-<a href="../appendix/get_ip.md">跳转到B.md</a>
+[Set up Your Raspberry Pi](../appendix/get_ip.md#b)
 
