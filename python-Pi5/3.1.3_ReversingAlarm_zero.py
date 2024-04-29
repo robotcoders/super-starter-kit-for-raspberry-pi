@@ -15,7 +15,7 @@ def lcdsetup():
     LCD1602.clear()  # Clear the LCD display
     # Display startup messages on LCD
     LCD1602.write(0, 0, 'Ultrasonic Starting')
-    LCD1602.write(1, 1, 'By LAFVIN')
+    LCD1602.write(5, 1, 'By LAFVIN')
     time.sleep(2)  # Wait for 2 seconds
 
 def distance():
