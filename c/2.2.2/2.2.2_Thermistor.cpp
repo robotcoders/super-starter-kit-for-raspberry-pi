@@ -9,7 +9,7 @@ int main(void){
     adc = new ADCDevice();
     printf("Program is starting ... \n");
     
-    else if(adc->detectI2C(0x48)){// Detect the ads7830
+    if(adc->detectI2C(0x48)){// Detect the ads7830
         delete adc;               // Free previously pointed memory
         adc = new ADS7830();      // If detected, create an instance of ADS7830.
     }
