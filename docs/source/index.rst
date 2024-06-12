@@ -14,11 +14,3 @@ LAFVIN Super Starter Kit for Raspberry Pi
    processing/play_with_processing
    scratch/scratch
    appendix/appendix
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

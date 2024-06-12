@@ -13,6 +13,7 @@ includes installing the OS, Raspberry Pi network and how to open terminal.
 .. toctree::
     :maxdepth: 2
 
+    Translate.md
     What_Do_We_Need.md
     Installing_the_OS(Common).md
     Set_up_Your_Raspberry_Pi.md
