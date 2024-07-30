@@ -20,7 +20,7 @@ In this project, we need the following components.
 
 The ADS7830 is a single-supply, low-power, 8-bit data acquisition device that features a serial I2C interface and an 8-channel multiplexer. The following table is the pin definition diagram of ADS7830.
 
-![](./img/ADS7830_Module.png)
+.. image:: ./img/ADS7830_Module.png
 
 **ADC**
 
@@ -30,7 +30,7 @@ binary form consisting of 1s and 0s. The range of our ADC module is 8 bits, that
 Any analog value can be mapped to one digital value using the resolution of the converter. So the more bits
 the ADC has, the denser the partition of analog will be and the greater the precision of the resulting conversion.
 
-![](./img/ADC_S.png)
+.. image:: ./img/ADC_S.png
 
 Subsection 1: the analog in range of 0V-3.3/256 V corresponds to digital 0;
 
@@ -50,13 +50,13 @@ To determine the location of the stick, the joystick control system simply monit
 
 The joystick also has a digital input that is actuated when the joystick is pressed down.
 
-![](./img/image318.png)
+.. image:: ./img/image318.png
 
 When the data of joystick is read, there are some differents between axis: data of X and Y axis is analog, which need to use ADC0834 to convert the analog value to digital value. Data of Z axis is digital, so you can directly use the GPIO to read, or you can also use ADC to read.
 
 
-Schematic Diagram
------------------
+Connect
+-----------------------
 
 When the data of joystick is read, there are some differents between
 axis: data of X and Y axis is analog, which need to use ADS7830 Module to
@@ -65,17 +65,12 @@ you can directly use the GPIO to read, or you can also use ADC to read.
 
 .. image:: ../python_pi5/img/schematic/2.1.9_joystick_schematic_1.png
 
-
-.. image:: ../python_pi5/img/schematic/2.1.9_joystick_schematic_2.png
-
-Connect
------------------------
-
-**Step 1:** Build the circuit.
-
 .. image:: ../python_pi5/img/connect/2.1.2.png
 
-**Step 2:** Go to the folder of the code.
+Code
+------------------
+
+**Step 1:** Go to the folder of the code.
 
 .. raw:: html
 
@@ -85,7 +80,7 @@ Connect
 
     cd ~/super-starter-kit-for-raspberry-pi/python-pi5
 
-**Step 3:** Run.
+**Step 2:** Run.
 
 .. raw:: html
 
@@ -98,7 +93,7 @@ Connect
 After the code runs, turn the Joystick, then the corresponding values of
 x, y, Btn are displayed on screen.
 
-**Code**
+
 
 .. note::
 
