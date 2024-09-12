@@ -26,3 +26,5 @@ except KeyboardInterrupt:
     # Gracefully handle a keyboard interrupt (Ctrl+C) by breaking the loop.
     # GPIO Zero handles cleanup of GPIO settings automatically on exit.
     pass
+
+
